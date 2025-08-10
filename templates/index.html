@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Wi-Fi Hotspot Mapper (DBSCAN)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="logo">📶</div>
+      <div>
+        <h1>Wi-Fi Hotspot Mapper</h1>
+        <p class="sub">Detect dense Wi-Fi areas using DBSCAN — drop a location and see if it's a hotspot.</p>
+      </div>
+    </header>
+
+    <main class="card">
+      <div class="left">
+        <h3>Enter location & signal</h3>
+        <form method="post" class="form">
+          <label>Latitude ({{ ranges.lat_min }} — {{ ranges.lat_max }})</label>
+          <input name="lat" type="number" step="0.0001" min="{{ ranges.lat_min }}" max="{{ ranges.lat_max }}" value="37.7750" required>
+
+          <label>Longitude ({{ ranges.lon_min }} — {{ ranges.lon_max }})</label>
+          <input name="lon" type="number" step="0.0001" min="{{ ranges.lon_min }}" max="{{ ranges.lon_max }}" value="-122.4180" required>
+
+          <label>Avg RSSI (dBm) ({{ ranges.rssi_min }} — {{ ranges.rssi_max }})</label>
+          <input name="rssi_dbm" type="number" step="1" min="{{ ranges.rssi_min }}" max="{{ ranges.rssi_max }}" value="-45" required>
+
+          <label>Active devices (estimate)</label>
+          <input name="device_count" type="number" step="1" min="0" max="50" value="3" required>
+
+          <div class="actions">
+            <button class="btn">Check Hotspot</button>
+            <a class="btn ghost" href="/static/plots/cluster_map.png" target="_blank">View cluster map</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="right">
+        <h4>About</h4>
+        <p>This demo simulates Wi-Fi readings in a city and uses DBSCAN to detect hotspots — dense regions of strong signals and many devices.</p>
+        <ul>
+          <li><strong>DBSCAN</strong> finds density-based clusters and labels sparse points as noise.</li>
+          <li>Hotspots are shown as yellow stars on the map.</li>
+          <li>Enter a location to check whether it falls within ~150m of a detected hotspot.</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="foot">Built for demonstration • DBSCAN Hotspot Detection</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{font-family:Nunito,Segoe UI,Arial;background:linear-gradient(180deg,#f6fbff,#eef6ff);margin:0;color:#0b2a3b}
+.wrap{max-width:980px;margin:28px auto;padding:18px}
+.top{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.logo{font-size:36px;background:linear-gradient(90deg,#00b4d8,#0077b6);width:64px;height:64px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff}
+h1{margin:0;font-weight:800}
+.sub{color:#386b81;margin:0}
+.card{display:flex;gap:18px;padding:18px;border-radius:12px;background:#ffffff;box-shadow:0 10px 30px rgba(15,37,51,0.06)}
+.left{flex:1}
+.right{width:320px;padding-left:8px;color:#234552}
+label{display:block;margin-top:10px;font-weight:700;color:#084a60}
+input[type=number]{width:100%;padding:8px;border-radius:8px;border:1px solid #d7eef8;margin-top:6px}
+.actions{margin-top:12px;display:flex;gap:10px}
+.btn{background:linear-gradient(90deg,#0077b6,#00b4d8);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;border:none;font-weight:800;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid #d7eef8;color:#084a60;padding:9px 12px;border-radius:10px}
+.foot{margin-top:12px;color:#316a84}
+.result .status{text-align:center;margin-bottom:12px}
+.badge{display:inline-block;padding:8px 14px;border-radius:999px;font-weight:800;color:#fff}
+.hot{background:linear-gradient(90deg,#ffd166,#ff7b7b);color:#2b2b2b}
+.noise{background:#cbd5e1;color:#0b2a3b}
+.map img{width:100%;border-radius:8px;box-shadow:0 8px 20px rgba(15,37,51,0.08)}
+@media(max-width:800px){.card{flex-direction:column}.right{width:100%}}

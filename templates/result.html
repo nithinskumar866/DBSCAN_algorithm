@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hotspot Result</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="logo">📶</div>
+      <div><h1>Wi-Fi Hotspot Mapper</h1><p class="sub">Result</p></div>
+    </header>
+
+    <main class="card result">
+      <div class="status">
+        {% if assigned.cluster != -1 %}
+          <div class="badge hot">Hotspot {{ assigned.cluster }}</div>
+          <p>{{ assigned.note }}</p>
+          <p>Distance to center: {{ assigned.distance_m }} m</p>
+        {% else %}
+          <div class="badge noise">Noise / No Hotspot</div>
+          <p>{{ assigned.note }}</p>
+          {% if assigned.distance_m %}<p>Nearest hotspot approx {{ assigned.distance_m }} m away</p>{% endif %}
+        {% endif %}
+      </div>
+
+      {% if plot_url %}
+      <div class="map">
+        <img src="{{ url_for('static', filename='plots/user_map.png') }}" alt="map">
+      </div>
+      {% else %}
+      <div class="muted" style="padding:12px;background:#f6fbff;border-radius:8px;">
+        <p><strong>Plot not available.</strong> Labeled dataset not found or could not be read. Please run <code>python train.py</code> to (re)generate clustered data and plots, then try again.</p>
+        <p>If you already ran <code>train.py</code> and still see this message, check that <code>data/wifi_readings.csv</code> or <code>models/wifi_labeled.csv</code> exists and contains a <code>cluster</code> column.</p>
+      </div>
+      {% endif %}
+
+      <div class="actions" style="margin-top:12px;">
+        <a class="btn" href="/">Try another</a>
+        <a class="btn ghost" href="/static/plots/cluster_map.png" target="_blank">View full cluster map</a>
+      </div>
+    </main>
+
+    <footer class="foot">Built for demonstration • DBSCAN Hotspot Detection</footer>
+  </div>
+</body>
+</html>

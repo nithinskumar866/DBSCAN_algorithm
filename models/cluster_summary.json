@@ -1,0 +1,170 @@
+[
+  {
+    "cluster": 0,
+    "center_lat": 37.77523633679613,
+    "center_lon": -122.41800123974451,
+    "avg_rssi": -39.562492464645366,
+    "avg_devices": 7.0,
+    "count": 39
+  },
+  {
+    "cluster": 1,
+    "center_lat": 37.77505628840528,
+    "center_lon": -122.41825740825527,
+    "avg_rssi": -40.06974613456487,
+    "avg_devices": 2.0,
+    "count": 41
+  },
+  {
+    "cluster": 2,
+    "center_lat": 37.77492538466167,
+    "center_lon": -122.41821926388963,
+    "avg_rssi": -40.643891631507024,
+    "avg_devices": 4.0,
+    "count": 48
+  },
+  {
+    "cluster": 3,
+    "center_lat": 37.77456652503984,
+    "center_lon": -122.41785551434597,
+    "avg_rssi": -39.479100010747956,
+    "avg_devices": 6.0,
+    "count": 46
+  },
+  {
+    "cluster": 4,
+    "center_lat": 37.77523576306311,
+    "center_lon": -122.41810457218887,
+    "avg_rssi": -38.542930649667674,
+    "avg_devices": 5.0,
+    "count": 35
+  },
+  {
+    "cluster": 5,
+    "center_lat": 37.77519570345765,
+    "center_lon": -122.41827093269038,
+    "avg_rssi": -38.98130795812701,
+    "avg_devices": 3.0,
+    "count": 41
+  },
+  {
+    "cluster": 6,
+    "center_lat": 37.77493220236075,
+    "center_lon": -122.41779424702631,
+    "avg_rssi": -40.56332418363592,
+    "avg_devices": 1.0,
+    "count": 38
+  },
+  {
+    "cluster": 7,
+    "center_lat": 37.78804404334815,
+    "center_lon": -122.40503800371232,
+    "avg_rssi": -44.7974497322458,
+    "avg_devices": 7.0,
+    "count": 50
+  },
+  {
+    "cluster": 8,
+    "center_lat": 37.78754528647664,
+    "center_lon": -122.40500353308244,
+    "avg_rssi": -45.01155802056454,
+    "avg_devices": 2.0,
+    "count": 38
+  },
+  {
+    "cluster": 9,
+    "center_lat": 37.7878157056373,
+    "center_lon": -122.40422162463024,
+    "avg_rssi": -45.93325807564959,
+    "avg_devices": 4.0,
+    "count": 33
+  },
+  {
+    "cluster": 10,
+    "center_lat": 37.787315356601354,
+    "center_lon": -122.40489598212596,
+    "avg_rssi": -44.51489139649021,
+    "avg_devices": 3.0,
+    "count": 43
+  },
+  {
+    "cluster": 11,
+    "center_lat": 37.78787256963361,
+    "center_lon": -122.40516661611916,
+    "avg_rssi": -44.445236631405756,
+    "avg_devices": 1.0,
+    "count": 43
+  },
+  {
+    "cluster": 12,
+    "center_lat": 37.7880706116973,
+    "center_lon": -122.40498296891246,
+    "avg_rssi": -46.21934574879873,
+    "avg_devices": 5.0,
+    "count": 38
+  },
+  {
+    "cluster": 13,
+    "center_lat": 37.78837544856885,
+    "center_lon": -122.40544817092966,
+    "avg_rssi": -44.014672639364726,
+    "avg_devices": 6.0,
+    "count": 37
+  },
+  {
+    "cluster": 14,
+    "center_lat": 37.7649223386716,
+    "center_lon": -122.43442416393452,
+    "avg_rssi": -49.831346471699575,
+    "avg_devices": 3.0,
+    "count": 41
+  },
+  {
+    "cluster": 15,
+    "center_lat": 37.765047593990445,
+    "center_lon": -122.4345626649765,
+    "avg_rssi": -49.16897014083428,
+    "avg_devices": 6.0,
+    "count": 47
+  },
+  {
+    "cluster": 16,
+    "center_lat": 37.76512394361313,
+    "center_lon": -122.4345844224054,
+    "avg_rssi": -49.670789277597606,
+    "avg_devices": 5.0,
+    "count": 39
+  },
+  {
+    "cluster": 17,
+    "center_lat": 37.76490329568747,
+    "center_lon": -122.4354098963088,
+    "avg_rssi": -50.01434486291832,
+    "avg_devices": 1.0,
+    "count": 38
+  },
+  {
+    "cluster": 18,
+    "center_lat": 37.76515916987357,
+    "center_lon": -122.43490556017062,
+    "avg_rssi": -50.58374048763524,
+    "avg_devices": 2.0,
+    "count": 40
+  },
+  {
+    "cluster": 19,
+    "center_lat": 37.765915411782046,
+    "center_lon": -122.43474006137869,
+    "avg_rssi": -48.46292447562344,
+    "avg_devices": 4.0,
+    "count": 28
+  },
+  {
+    "cluster": 20,
+    "center_lat": 37.765045781555195,
+    "center_lon": -122.43545758499052,
+    "avg_rssi": -48.839777579305995,
+    "avg_devices": 7.0,
+    "count": 48
+  }
+]
