@@ -1,10 +1,10 @@
-# 📶 Wi‑Fi Hotspot Detection using DBSCAN (Flask App)
+# Wi‑Fi Hotspot Detection using DBSCAN (Flask App)
 
-## 📌 Project Overview
+##  Project Overview
 This project detects dense Wi‑Fi hotspots from simulated signal readings using the DBSCAN clustering algorithm.
 Users can input a location (latitude, longitude), average RSSI (dBm) and active device estimate to check if that point falls inside a detected hotspot.
 
-## 📂 Project Structure
+##  Project Structure
 ```
 wifi-dbscan/
 │
@@ -18,13 +18,11 @@ wifi-dbscan/
 ├── templates/
 │   ├── index.html
 │   └── result.html
-├── static/
-│   ├── css/style.css
-│   └── plots/cluster_map.png
+|
 └── README.md
 ```
 
-## ⚙️ How It Works
+##  How It Works
 
 ### Data Source
 Synthetic Wi‑Fi readings are generated inside a city bounding box. Each reading contains:
@@ -41,7 +39,7 @@ Synthetic Wi‑Fi readings are generated inside a city bounding box. Each readin
 - Flask app (`app.py`) loads cluster summaries and checks a user-provided point by nearest hotspot center (within 150 meters threshold).
 - The app returns whether the point is inside a hotspot and produces a small map plot with your point highlighted.
 
-## 🔧 Installation
+##  Installation
 
 1. Install dependencies
 ```
@@ -60,7 +58,7 @@ python app.py
 
 Open: http://127.0.0.1:5400
 
-## 🖥️ Sample UI
+##  Sample UI
 
 --------
 Step:1
