@@ -61,6 +61,16 @@ python app.py
 Open: http://127.0.0.1:5400
 
 ## 🖥️ Sample UI
+
+--------
+Step:1
+![alt text](image.png)
+--------
+Output page:
+![alt text](image-1.png)
+
+
+
 Input realistic ranges for the city simulated (latitude and longitude bounds are shown on the form). Example:
 - Latitude: 37.7750
 - Longitude: -122.4180
@@ -69,8 +79,4 @@ Input realistic ranges for the city simulated (latitude and longitude bounds are
 
 Output: Either "Hotspot X" (with distance) or "Noise / No Hotspot", plus a small map plot showing clusters and your location.
 
-## 🙋‍♂️ Author
-Hari Prasath S
 
-## 📘 License
-Open source — free to use.
